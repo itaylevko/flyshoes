@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background: #000;
+    color: white;
+}
+
+
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.bg-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+
+header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+
+header h1 {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+
+nav a {
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    transition:.3s;
+}
+
+
+nav a:hover {
+    color:#aaa;
+}
+
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align:center;
+    top:35%;
+}
+
+
+.content h2 {
+    font-size:70px;
+    font-weight:900;
+}
+
+
+.content p {
+    font-size:25px;
+    margin:20px;
+}
+
+
+button {
+    padding:15px 45px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:black;
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+
+button:hover {
+    transform:scale(1.1);
+}
+
+
+.products {
+    padding:70px;
+    text-align:center;
+}
+
+
+.products h2 {
+    font-size:45px;
+}
+
+
+.cards {
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+}
+
+
+.card {
+    background:#111;
+    padding:40px;
+    width:280px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+
+.card:hover {
+    transform:translateY(-10px);
+}
+
+
+.card h3 {
+    font-size:30px;
+    margin-bottom:15px;
+}
